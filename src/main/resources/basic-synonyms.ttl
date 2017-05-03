@@ -1,0 +1,23 @@
+# declare this header in the top of the file
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+# modify this prefix to suit your namespace
+@prefix lil: <http://www.lilie.ai/> .
+
+lil:BasicThesaurus a skos:ConceptScheme .
+lil:BasicThesaurus skos:prefLabel "Basic Thesaurus"@en .
+
+lil:greet a skos:Concept .
+lil:greet skos:inScheme lil:BasicThesaurus .
+lil:greet skos:prefLabel "Hello"@en .
+
+lil:hi a skos:Concept .
+lil:hi skos:inScheme lil:BasicThesaurus .
+lil:hi skos:prefLabel "Hi"@en .
+lil:hi skos:related lil:greet .
+
+lil:hello a skos:Concept .
+lil:hello skos:inScheme lil:BasicThesaurus .
+lil:hello skos:prefLabel "Hello"@en .
+lil:hello skos:related lil:greet .
