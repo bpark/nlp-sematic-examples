@@ -1,0 +1,4 @@
+@prefix ex: <http://example.org/>.
+ex:John a ex:Father ;
+        ex:parentOf ex:Lucy .
+ex:Lucy a ex:Person .

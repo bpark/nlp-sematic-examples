@@ -1,0 +1,3 @@
+@prefix ex: <http://example.org/> .
+ex:Bob   ex:exchangesKeysWith ex:Alice .
+ex:Alice ex:sendsMessageTo    ex:Bob .

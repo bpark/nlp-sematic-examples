@@ -1,0 +1,11 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix sp: <http://spinrdf.org/sp#>.
+@prefix spin: <http://spinrdf.org/spin#>.
+@prefix ex: <http://example.org/>.
+ex:Person a rdfs:Class ;
+	spin:rule [
+		a sp:Construct ;
+	sp:text """PREFIX ex: <http://example.org/>
+	           CONSTRUCT { ?this ex:childOf ?parent . }
+	           WHERE { ?parent ex:parentOf ?this . }"""
+] .
